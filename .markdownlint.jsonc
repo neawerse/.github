@@ -1,0 +1,14 @@
+// markdownlint settings for this repository (the VS Code extension reads
+// this file). While it exists the extension's own defaults are not applied,
+// so the extension default "MD013": false is written out here.
+{
+  // Line length: README paragraphs are written as prose, one line each.
+  "MD013": false,
+  // The organization profile README (profile/README.md) centres its header
+  // with a div: GitHub Markdown has no way to centre content. Any other
+  // inline HTML is still reported.
+  "MD033": { "allowed_elements": ["div"] },
+  // The header sits inside the div; content before the first heading is
+  // allowed, the first heading must still be an h1.
+  "MD041": { "allow_preamble": true }
+}
